@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Adhul Nadh - Cybersecurity Enthusiast, Video Editor, and Poster & Logo Designer. Merging digital defense with cinematic media.">
+  <meta name="keywords" content="Adhul Nadh, Cybersecurity, Video Editing, Poster Design, Logo Design, Ethical Hacking, DaVinci Resolve, Portfolio">
+  <meta name="author" content="Adhul Nadh">
+  <title>Adhul Nadh | Cybersecurity • Video Editing • Graphic Design</title>
+
+  <!-- Google Fonts: Space Grotesk, Orbitron, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Orbitron:wght@600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ==================== STICKY NAVBAR ==================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Adhul Nadh Portfolio Home">
+        <span>Adhul Nadh</span><span class="brand-badge"></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <i class="fas fa-sun"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <i class="fas fa-paper-plane"></i> Let's Talk
+        </a>
+
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <button id="mobile-close-btn" class="mobile-close-btn" aria-label="Close menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      <li>
+        <a href="#contact" class="btn btn-primary mobile-nav-link" style="font-size: 1rem; padding: 0.7rem 1.8rem; margin-top: 0.5rem;">
+          <i class="fas fa-paper-plane"></i> Let's Talk
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <canvas id="cyber-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-grid">
+        <!-- Hero Left -->
+        <div class="hero-content" data-aos="fade-right">
+          <div class="hero-badge-wrap">
+            <span class="pulse-dot"></span>
+            <span>Available for Freelance Video editing &amp; Poster designing</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hey, I'm <span class="gradient-text">Adhul Nadh</span>
+          </h1>
+
+          <!-- Terminal Style Tagline -->
+          <div class="hero-terminal">
+            <span class="terminal-prefix">adhul@infosec:~$</span>
+            <span id="typewriter" class="typewriter-text">Cybersecurity Enthusiast</span>
+            <span class="cursor-blink" aria-hidden="true"></span>
+          </div>
+
+          <p class="hero-description">
+            BTech Student (2nd Year) &amp; Future Security Analyst. Passionate about cybersecurity, ethical hacking, and threat intelligence, while crafting high-retention video edits and sleek graphic posters.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-layer-group"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-handshake"></i> Hire Me
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/adhulnadh/" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub Profile" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adhul-nadh-6414b0372/" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://t.me/adhul_nxd/" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="Telegram" title="Telegram">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="mailto:adhulnadh39@gmail.com" class="hero-social-link" aria-label="Direct Email" title="Send Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right: Glowing Border Profile Card -->
+        <div class="hero-visual" data-aos="fade-left">
+          <div class="profile-frame-wrap">
+            <div class="profile-frame-inner">
+              <img src="images/main-profile.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80';" alt="Adhul Nadh - Cybersecurity &amp; Creative Portfolio" fetchpriority="high">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="hero-floating-pill pill-cyber">
+              <i class="fas fa-shield-halved"></i>
+              <span>Cybersecurity</span>
+            </div>
+            <div class="hero-floating-pill pill-video">
+              <i class="fas fa-film"></i>
+              <span>Video editing &amp; Poster design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== 2. ABOUT SECTION ==================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="fas fa-user-shield"></i> About Me
+          </div>
+          <h2 class="section-title">
+            Blending <span class="neon-cyan">Digital Defense</span> with <span class="neon-purple">Creative Vision</span>
+          </h2>
+          <p class="section-subtitle">
+            An Cybersecurity enthusiastic and designer turning curiosity into impenetrable security and compelling visual stories.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Image & Badge -->
+          <div class="about-visual" data-aos="fade-right">
+            <div class="about-img-box">
+              <img src="images/profile.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80';" alt="Adhul Nadh Profile">
+              <div class="about-experience-badge">
+                <div class="about-badge-num">2+</div>
+                <div class="about-badge-label">Years of Focus</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Bio + Stats Cards + Resume -->
+          <div class="about-content" data-aos="fade-left">
+            <p class="about-bio">
+              I'm <strong>Adhul Nadh</strong>, a 2nd-year BTech Computer Science undergraduate and aspiring Cybersecurity Analyst. I focus on understanding how complex systems function, hunting down vulnerabilities, and hardening web environments using tools like Kali Linux, Wireshark, and Burp Suite.
+              <br><br>
+              Simultaneously, my creative instincts drive me to produce cinematic video edits, motion sequences, and high-impact poster &amp; logo designs with DaVinci Resolve, Premiere Pro, Illustrator, and Photoshop.
+            </p>
+
+            <!-- Quick Stats Cards -->
+            <!--
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-num">02+</div>
+                <div class="stat-label">Years of Experience</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">25+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">10+</div>
+                <div class="stat-label">Happy Collaborations</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">15+</div>
+                <div class="stat-label">Tools &amp; Frameworks</div>
+              </div>
+            </div>
+          -->
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-file-arrow-down"></i> Download Resume
+              </a>
+              <a href="#skills" class="btn btn-secondary">
+                <i class="fas fa-microchip"></i> Explore Skills
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== 3. SKILLS SECTION ==================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="fas fa-laptop-code"></i> Technical Arsenal
+          </div>
+          <h2 class="section-title">
+            Skills &amp; <span class="gradient-text">Proficiencies</span>
+          </h2>
+          <p class="section-subtitle">
+            Hands-on expertise across offensive cybersecurity tools, post-production video editing, and vector design suites.
+          </p>
+        </div>
+
+        <div class="skills-category-wrapper">
+          <!-- Category 1: Cybersecurity -->
+          <div class="skills-category-block" data-aos="fade-up">
+            <h3 class="skills-cat-title">
+              <i class="fas fa-shield-virus"></i> Cybersecurity &amp; Network Defense
+            </h3>
+            <div class="skills-items-grid">
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fab fa-linux neon-cyan"></i> Kali Linux</span>
+                  <span class="skill-percent">60%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="60%"></div></div>
+              </div>
+
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-network-wired neon-cyan"></i> Wireshark</span>
+                  <span class="skill-percent">30%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="30%"></div></div>
+              </div>
+
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-spider neon-cyan"></i> Burp Suite</span>
+                  <span class="skill-percent">10%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="10%"></div></div>
+              </div>
+
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-radar neon-cyan"></i> Nmap</span>
+                  <span class="skill-percent">40%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="40%"></div></div>
+              </div>
+
+              <!--
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-terminal neon-cyan"></i> Metasploit</span>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="82%"></div></div>
+              </div>
+            -->
+              <!---
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-lock neon-cyan"></i> Network Security</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="85%"></div></div>
+              </div>
+            -->
+              <!--
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-user-secret neon-cyan"></i> OSINT</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="80%"></div></div>
+              </div>-->
+
+            </div>
+          </div>
+        
+          
+          <!-- Category 2: Video Editing -->
+          <div class="skills-category-block" data-aos="fade-up">
+            <h3 class="skills-cat-title purple">
+              <i class="fas fa-film"></i> Video Editing &amp; Color Grading
+            </h3>
+            <div class="skills-items-grid">
+              <div class="skill-bar-card purple">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-video neon-purple"></i> DaVinci Resolve</span>
+                  <span class="skill-percent">60%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="60%"></div></div>
+              </div>
+
+              <!--
+              <div class="skill-bar-card purple">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-clapperboard neon-purple"></i> Premiere Pro</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="88%"></div></div>
+              </div>
+            -->
+              <!--
+              <div class="skill-bar-card purple">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-wand-magic-sparkles neon-purple"></i> After Effects</span>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="82%"></div></div>
+              </div>
+            -->
+
+              <div class="skill-bar-card purple">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-mobile-screen neon-purple"></i> CapCut Pro</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Design -->
+          <div class="skills-category-block" data-aos="fade-up">
+            <h3 class="skills-cat-title">
+              <i class="fas fa-palette"></i> Poster &amp; Logo Design
+            </h3>
+            <div class="skills-items-grid">
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-image neon-cyan"></i> Adobe Photoshop</span>
+                  <span class="skill-percent">45%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="45%"></div></div>
+              </div>
+
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-bezier-curve neon-cyan"></i> Adobe Illustrator</span>
+                  <span class="skill-percent">60%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="60%"></div></div>
+              </div>
+
+              <!--
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-object-group neon-cyan"></i> Figma</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="88%"></div></div>
+              </div>
+            -->
+              <!--
+              <div class="skill-bar-card">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fas fa-pen-nib neon-cyan"></i> Canva Pro</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-target="92%"></div></div>
+              </div>
+            -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== 4. EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="fas fa-route"></i> Career Roadmap
+          </div>
+          <h2 class="section-title">
+            Journey &amp; <span class="gradient-text">Experience</span>
+          </h2>
+          <p class="section-subtitle">
+            A chronological timeline of hands-on security engagements, design projects, and educational milestones.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1 (Left) -->
+           <!--
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Security Researcher &amp; Threat Analyst</h3>
+              <div class="timeline-org">Independent Labs / Bug Bounty</div>
+              <span class="timeline-period">2024 — Present</span>
+              <p class="timeline-desc">
+                Performing systematic reconnaissance, web application penetration tests, and vulnerability reporting. Experimenting with automated Nmap/Python scripts and network packet monitoring.
+              </p>
+              <span class="timeline-tag">OWASP • Burp • Kali</span>
+            </div>
+          </div>
+        -->
+
+          <!-- Item 2 (Right) -->
+          <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Video Editor @ IEEE Education society</h3>
+              <h3 class="timeline-role">KARE University</h3>
+              <div class="timeline-org">Creative Editor &amp; Content Creators</div>
+              <span class="timeline-period">2026 — Present</span>
+              <p class="timeline-desc">
+                Edited over 20+ high-engagement commercial reels, YouTube videos, and cinematic promos with DaVinci Resolve &amp; CapCut. Optimized color grading, audio timing, and dynamic cuts.
+              </p>
+              <span class="timeline-tag">DaVinci • CapCut </span>
+            </div>
+          </div>
+
+          <!-- Item 3 (Left) -->
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">Poster &amp; Brand Identity Designer</h3>
+              <div class="timeline-org">Freelance / Campus Events</div>
+              <span class="timeline-period">2025 — Present</span>
+              <p class="timeline-desc">
+                Designed event branding, futuristic posters, distinctive logo emblems, and promotional social media assets using Adobe Photoshop and Illustrator.
+              </p>
+              <span class="timeline-tag">Branding • Illustrator • Posters</span>
+            </div>
+          </div>
+
+          <!-- Item 4 (Right) -->
+          <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-role">B.Tech in Computer Science &amp; Engineering</h3>
+              <div class="timeline-org">Undergraduate (2nd Year)</div>
+              <span class="timeline-period">2025 — 2029</span>
+              <p class="timeline-desc">
+                Focusing on computer networking, operating systems, data structures, algorithms, cryptography, and modern software security fundamentals.
+              </p>
+              <span class="timeline-tag">CS Degree • Networks • Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== 5. PROJECTS SECTION ==================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="fas fa-cubes"></i> Portfolio Showcase
+          </div>
+          <h2 class="section-title">
+            Featured <span class="gradient-text">Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            A curated collection of security tools, video productions, and visual identity designs.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-tabs-wrapper" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="cyber">Cybersecurity</button>
+          <button class="filter-btn" data-filter="video">Video Editing</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Cybersecurity -->
+          <article class="project-card" data-category="cyber" data-demo="https://github.com/adhulnadh/port-scaner.git" data-github="https://github.com/adhulnadh/port-scaner.git" data-aos="fade-up">
+            <div class="project-thumb-box">
+              <span class="project-category-badge">Cybersecurity</span>
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="VortexGuard Threat Intelligence Scanner" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Security Scanner</h3>
+              <p class="project-desc">
+                Automated network port scanning assessment engine that analyzes target endpoints,provide open ports.
+              </p>
+              <div class="project-tech-icons">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Kali Linux</span>
+              </div>
+              <div class="project-footer-links">
+                <button class="project-btn-link view-project-details"><i class="fas fa-eye"></i> View Details</button>
+                <a href="https://github.com/adhulnadh/port-scaner.git" target="_blank" rel="noopener noreferrer" class="project-btn-link neon-cyan"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Video Editing -->
+          <article class="project-card" data-category="video" data-demo="https://youtube.com" data-github="https://github.com/adhulnadh/" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-thumb-box">
+              <span class="project-category-badge video">Video Editing</span>
+              <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80" alt="Cinematic Teaser Trailer" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Promotio Video</h3>
+              <p class="project-desc">
+                High-octane promotional trailer combining kinetic motion graphics, customized glitch transitions, filmic DaVinci color grading, and impactful Foley sound design.
+              </p>
+              <div class="project-tech-icons">
+                <span class="tech-pill">DaVinci Resolve</span>
+                <span class="tech-pill">CapCut</span>
+                <span class="tech-pill">Color LUTs</span>
+              </div>
+              <div class="project-footer-links">
+                <button class="project-btn-link view-project-details"><i class="fas fa-eye"></i> View Details</button>
+                <a href="https://www.instagram.com/reel/DcGX9Zrz9ML/?stkn=MXFhdzZydHA4YmZteA==" target="_blank" rel="noopener noreferrer" class="project-btn-link neon-purple"><i class="fas fa-play"></i> Watch</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Design -->
+           <!--
+          <article class="project-card" data-category="design" data-demo="https://behance.net" data-github="https://github.com/adhulnadh/" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-thumb-box">
+              <span class="project-category-badge design">Design</span>
+              <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=800&q=80" alt="Aura Cyberpunk Poster & Logo Series" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Cyberpunk Poster &amp; Logo Kit</h3>
+              <p class="project-desc">
+                Comprehensive vector brand design system crafted for a next-gen cyber summit. Includes dark-mode typography, geometric emblem logo, and high-res print posters.
+              </p>
+              <div class="project-tech-icons">
+                <span class="tech-pill">Illustrator</span>
+                <span class="tech-pill">Photoshop</span>
+                <span class="tech-pill">Vector Art</span>
+              </div>
+              <div class="project-footer-links">
+                <button class="project-btn-link view-project-details"><i class="fas fa-eye"></i> View Details</button>
+                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="project-btn-link" style="color: #ff3366;"><i class="fab fa-behance"></i> Mockup</a>
+              </div>
+            </div>
+          </article>
+        -->
+
+          <!-- Project 4: Cybersecurity -->
+           
+          <article class="project-card" data-category="cyber" data-demo="https://github.com/adhulnadh/password-generator" data-github="https://github.com/adhulnadh/password-generator" data-aos="fade-up">
+            <div class="project-thumb-box">
+              <span class="project-category-badge">Cybersecurity</span>
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Sentinel Network Packet Monitor" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Password Generator</h3>
+              <p class="project-desc">
+                A simple and secure Python Password Generator built to create strong, random passwords.Uses a mix of letters, numbers, and special characters for better security. A beginner-friendly project to practice Python programming and randomization.
+              </p>
+              <div class="project-tech-icons">
+                <span class="tech-pill">Python Tkinder</span>
+              </div>
+              <div class="project-footer-links">
+                <button class="project-btn-link view-project-details"><i class="fas fa-eye"></i> View Details</button>
+                <a href="https://github.com/adhulnadh/password-generator" target="_blank" rel="noopener noreferrer" class="project-btn-link neon-cyan"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        
+
+          <!-- Project 5: Video Editing -->
+          <!--
+          <article class="project-card" data-category="video" data-demo="https://youtube.com" data-github="https://github.com/adhulnadh/" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-thumb-box">
+              <span class="project-category-badge video">Video Editing</span>
+              <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80" alt="Short Film Video Montage" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Commercial Video Reel</h3>
+              <p class="project-desc">
+                Fast-paced commercial video sequence optimized for viral social reach. Features multi-cam synchronization, beat-matched jump cuts, and cinematic color transitions.
+              </p>
+              <div class="project-tech-icons">
+                <span class="tech-pill">CapCut Pro</span>
+                <span class="tech-pill">DaVinci</span>
+                <span class="tech-pill">Sound FX</span>
+              </div>
+              <div class="project-footer-links">
+                <button class="project-btn-link view-project-details"><i class="fas fa-eye"></i> View Details</button>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="project-btn-link neon-purple"><i class="fas fa-play"></i> Watch</a>
+              </div>
+            </div>
+          </article>
+        -->
+
+          <!-- Project 6: Design -->
+           <!--
+          <article class="project-card" data-category="design" data-demo="https://figma.com" data-github="https://github.com/adhulnadh/" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-thumb-box">
+              <span class="project-category-badge design">Design</span>
+              <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80" alt="Minimalist Fintech Brand Identity" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">NeoBank Brand &amp; UI Concept</h3>
+              <p class="project-desc">
+                Clean, glassmorphic brand kit and mobile interface system designed for intuitive user experience, high visual contrast, and scalable design components.
+              </p>
+              <div class="project-tech-icons">
+                <span class="tech-pill">Figma</span>
+                <span class="tech-pill">Canva</span>
+                <span class="tech-pill">UI Design</span>
+              </div>
+              <div class="project-footer-links">
+                <button class="project-btn-link view-project-details"><i class="fas fa-eye"></i> View Details</button>
+                <a href="https://figma.com" target="_blank" rel="noopener noreferrer" class="project-btn-link" style="color: #ff3366;"><i class="fab fa-figma"></i> Figma</a>
+              </div>
+            </div>
+          </article>
+        -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details Native Modal -->
+    <dialog id="project-modal" class="lightbox-modal" aria-label="Project Details Modal">
+      <div class="lightbox-wrapper" style="max-width: 680px; margin: auto;">
+        <button id="modal-close-btn" class="lightbox-close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+        <div class="lightbox-img-box" style="max-height: 38vh;">
+          <img id="modal-img" src="" alt="Project detail preview">
+        </div>
+        <div style="padding: 1.75rem; display: flex; flex-direction: column; gap: 1rem;">
+          <h3 id="modal-title" class="lightbox-title" style="font-size: 1.4rem;"></h3>
+          <p id="modal-desc" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;"></p>
+          <div id="modal-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;"></div>
+          <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+            <a id="modal-demo-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a id="modal-code-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== 6. GALLERY SECTION ==================== -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="fas fa-camera"></i> Visual Archives
+          </div>
+          <h2 class="section-title">
+            Creative <span class="gradient-text">Gallery</span>
+          </h2>
+          <p class="section-subtitle">
+            Click any frame to launch the full-screen lightbox viewer. Use Left/Right keys or ESC.
+          </p>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="gallery-grid">
+          <!-- Item 1: Wide Design -->
+          <div class="gallery-item wide" data-title="Cyberpunk Vector Poster Series" data-desc="Futuristic vector artwork exploring cybersecurity and neon hues." data-full-img="images/IMG11.jpg" data-aos="fade-up">
+            <img src="images/IMG11.jpg" alt="Cyberpunk Vector Poster" loading="lazy">
+            <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
+          </div>
+
+          <!-- Item 2: Lab Setup -->
+          <div class="gallery-item" data-title="Ethical Hacking Station" data-desc="Multi-monitor cybersecurity testing workstation with telemetry logs." data-full-img="images/IMG2.jpg" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/IMG2.jpg" alt="Ethical Hacking Station" loading="lazy">
+            <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
+            <div class="gallery-overlay">
+            </div>
+          </div>
+
+          <!-- Item 3: Video Timeline -->
+          <div class="gallery-item" data-title="DaVinci Resolve Node Tree" data-desc="Multi-node color correction and ACES workflow in DaVinci Resolve." data-full-img="images/IMG1.jpg" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/IMG1.jpg" alt="DaVinci Resolve Timeline" loading="lazy">
+            <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
+            <div class="gallery-overlay">
+            </div>
+          </div>
+
+          <!-- Item 4: UI Concept -->
+          <div class="gallery-item" data-title="Security Telemetry Dashboard" data-desc="High-contrast dark mode dashboard for security monitoring." data-full-img="images/IMG3.jpg" data-aos="fade-up">
+            <img src="images/IMG3.jpg" alt="Security Telemetry Dashboard" loading="lazy">
+            <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
+            <div class="gallery-overlay">
+          </div>
+
+          <!-- Item 5: Motion Sequence -->
+          <div class="gallery-item" data-title="Kinetic Title Sequence" data-desc="Custom motion typography integrated with glitch displacement maps." data-full-img="images/IMG4.jpg" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/IMG4.jpg" alt="Kinetic Title Sequence" loading="lazy">
+            <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
+            <div class="gallery-overlay">
+            </div>
+          </div>
+
+          <!-- Item 6: Hardware Testing -->
+          <div class="gallery-item" data-title="IoT &amp; Hardware Testing Lab" data-desc="Serial interface auditing and packet sniffing on hardware boards." data-full-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Hardware Analysis Setup" loading="lazy">
+            <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Hardware Security</span>
+              <h4 class="gallery-title">Hardware Analysis Setup</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Native Lightbox Modal -->
+    <dialog id="lightbox-modal" class="lightbox-modal" aria-label="Fullscreen Image Preview">
+      <div class="lightbox-wrapper">
+        <button id="lightbox-close" class="lightbox-close-btn" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+        <button id="lightbox-prev" class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+        <button id="lightbox-next" class="lightbox-nav-btn lightbox-next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="lightbox-img-box">
+          <img id="lightbox-img" src="" alt="Enlarged view">
+        </div>
+
+        <div class="lightbox-footer">
+          <div>
+            <div id="lightbox-title" class="lightbox-title"></div>
+            <div id="lightbox-desc" class="lightbox-desc"></div>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">Use &larr; &rarr; or ESC</span>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== 7. CONTACT SECTION ==================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="fas fa-paper-plane"></i> Get in Touch
+          </div>
+          <h2 class="section-title">
+            Let's Build Something <span class="gradient-text">Secure &amp; Creative</span>
+          </h2>
+          <p class="section-subtitle">
+            Need video editing, or want custom poster design? Drop me a line.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Form -->
+          <div class="contact-form-card" data-aos="fade-right">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Johnson" required autocomplete="name">
+                <span class="form-feedback" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required autocomplete="email">
+                <span class="form-feedback" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Project Inquiry / Collab">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your requirements, timeline, or scope..." required></textarea>
+                <span class="form-feedback" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Info Panel & One-Click Copy Cards -->
+          <div class="contact-info-panel" data-aos="fade-left">
+            <!-- Email -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="contact-label">Direct Email</div>
+                  <div class="contact-value">adhulnadh39@gmail.com</div>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="adhulnadh39@gmail.com" aria-label="Copy email address" title="Copy Email">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- Phone / WhatsApp -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box purple">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div>
+                  <div class="contact-label">Instant Messaging / Phone</div>
+                  <div class="contact-value">+91 7012115759</div>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="+917012115759" aria-label="Copy phone number" title="Copy Phone">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- Availability -->
+            <div class="contact-card">
+              <div class="contact-card-left">
+                <div class="contact-icon-box">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div>
+                  <div class="contact-label">Response Time</div>
+                  <div class="contact-value">Within 12 Hours </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Panel -->
+            <div class="social-links-panel">
+              <h4 class="social-panel-title">Connect with me online</h4>
+              <div class="social-icons-row">
+                <a href="https://github.com/adhulnadh/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adhul-nadh-6414b0372/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://t.me/adhul_nxd/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram" title="Telegram">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.instagram.com/adhul.nadh?stkn=MXMydmt0b2E4OWd2bw==" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/AdhulNadh8sbz" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter/X" title="Twitter/X">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="mailto:adhulnadh39@gmail.com" class="social-icon-btn" aria-label="Email" title="Send Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 8. FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-title">
+            <span>Adhul Nadh</span><span class="brand-badge" style="margin-left: 6px;"></span>
+          </div>
+          <p class="footer-brand-desc">
+            Cybersecurity Enthusiast, Video Editor &amp; Graphic Designer dedicated to crafting hardened defenses and cinematic media assets.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#about" class="footer-link">About Adhul Nadh</a></li>
+            <li><a href="#skills" class="footer-link">Skills &amp; Tools</a></li>
+            <li><a href="#experience" class="footer-link">Experience Roadmap</a></li>
+            <li><a href="#projects" class="footer-link">Featured Projects</a></li>
+            <li><a href="#gallery" class="footer-link">Visual Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Specializations</h4>
+          <ul class="footer-links-list">
+            <li><span class="footer-link" style="color: var(--accent-cyan);">• InfoSec &amp; PenTesting</span></li>
+            <li><span class="footer-link" style="color: var(--accent-purple);">• 4K Video Editing &amp; Color</span></li>
+            <li><span class="footer-link" style="color: #ff3366;">• Poster &amp; Logo Design</span></li>
+            <li><span class="footer-link" style="color: #10b981;">• Network Security</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Adhul Nadh. All rights reserved. Built with precision and passion.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification Alert -->
+  <div id="toast-alert" class="toast-alert" role="status" aria-live="polite">
+    <i class="fas fa-circle-check toast-icon"></i>
+    <span id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <!-- AOS Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 50
+    });
+  </script>
+
+  <!-- Custom App Script -->
+  <script src="script.js"></script>
+</body>
+</html>
