@@ -21,6 +21,19 @@
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init({
+          publicKey: "WL7C83U7AFqp0ds3I",
+        });
+    })();
+  </script>
+  <script src="mail.js"></script>
+  
 </head>
 <body>
 
@@ -700,13 +713,13 @@
         <!-- Masonry Grid -->
         <div class="gallery-grid">
           <!-- Item 1: Wide Design -->
-          <div class="gallery-item wide" data-title="Cyberpunk Vector Poster Series" data-desc="Futuristic vector artwork exploring cybersecurity and neon hues." data-full-img="images/IMG11.jpg" data-aos="fade-up">
+          <div class="gallery-item wide" data-title=" " data-desc=" " data-full-img="images/IMG11.jpg" data-aos="fade-up">
             <img src="images/IMG11.jpg" alt="Cyberpunk Vector Poster" loading="lazy">
             <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
           </div>
 
           <!-- Item 2: Lab Setup -->
-          <div class="gallery-item" data-title="Ethical Hacking Station" data-desc="Multi-monitor cybersecurity testing workstation with telemetry logs." data-full-img="images/IMG2.jpg" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-item" data-title="" data-desc=" " data-full-img="images/IMG2.jpg" data-aos="fade-up" data-aos-delay="100">
             <img src="images/IMG2.jpg" alt="Ethical Hacking Station" loading="lazy">
             <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
             <div class="gallery-overlay">
@@ -714,7 +727,7 @@
           </div>
 
           <!-- Item 3: Video Timeline -->
-          <div class="gallery-item" data-title="DaVinci Resolve Node Tree" data-desc="Multi-node color correction and ACES workflow in DaVinci Resolve." data-full-img="images/IMG1.jpg" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-item" data-title=" " data-desc=" " data-full-img="images/IMG1.jpg" data-aos="fade-up" data-aos-delay="200">
             <img src="images/IMG1.jpg" alt="DaVinci Resolve Timeline" loading="lazy">
             <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
             <div class="gallery-overlay">
@@ -722,14 +735,14 @@
           </div>
 
           <!-- Item 4: UI Concept -->
-          <div class="gallery-item" data-title="Security Telemetry Dashboard" data-desc="High-contrast dark mode dashboard for security monitoring." data-full-img="images/IMG3.jpg" data-aos="fade-up">
+          <div class="gallery-item" data-title=" " data-desc=" " data-full-img="images/IMG3.jpg" data-aos="fade-up">
             <img src="images/IMG3.jpg" alt="Security Telemetry Dashboard" loading="lazy">
             <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
             <div class="gallery-overlay">
           </div>
 
           <!-- Item 5: Motion Sequence -->
-          <div class="gallery-item" data-title="Kinetic Title Sequence" data-desc="Custom motion typography integrated with glitch displacement maps." data-full-img="images/IMG4.jpg" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-item" data-title=" " data-desc=" " data-full-img="images/IMG4.jpg" data-aos="fade-up" data-aos-delay="100">
             <img src="images/IMG4.jpg" alt="Kinetic Title Sequence" loading="lazy">
             <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
             <div class="gallery-overlay">
@@ -737,12 +750,10 @@
           </div>
 
           <!-- Item 6: Hardware Testing -->
-          <div class="gallery-item" data-title="IoT &amp; Hardware Testing Lab" data-desc="Serial interface auditing and packet sniffing on hardware boards." data-full-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Hardware Analysis Setup" loading="lazy">
+          <div class="gallery-item" data-title=" " data-desc=" " data-full-img="images/IMG6.jpg" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/IMG6.jpg" alt="Hardware Analysis Setup" loading="lazy">
             <div class="gallery-zoom-badge"><i class="fas fa-expand"></i></div>
             <div class="gallery-overlay">
-              <span class="gallery-tag">Hardware Security</span>
-              <h4 class="gallery-title">Hardware Analysis Setup</h4>
             </div>
           </div>
         </div>
@@ -814,7 +825,7 @@
                 <span class="form-feedback" role="alert"></span>
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;" onclick="sendMail()">
                 <i class="fas fa-paper-plane"></i> Send Message
               </button>
             </form>
